@@ -1,0 +1,10 @@
+<select id="month" ng-model="currMonth" ng-change="renderCalendar()">
+	<option value="{{month.value}}" ng-repeat="month in months">{{month.name}}</option>
+</select>
+<select id="year" ng-model="currYear" ng-options="year for year in years" ng-change="renderCalendar()"></select>
+<div class="calendar">
+	<div class="day header" ng-repeat="day in days">{{day}}</div>
+	<div class="day {{day.class}}" ng-repeat="day in range.days" >
+		<span class="content">{{day.day}}</span>
+	</div>
+</div>

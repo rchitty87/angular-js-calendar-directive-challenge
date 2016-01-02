@@ -1,1 +1,28 @@
-/* your css code goes here */
+.invalidMonth
+{
+  background: #808080;
+}
+
+.calendar
+{
+	width:840px;
+	border: 1px solid #000;
+	margin: 2em;
+}
+
+.day
+{
+	box-sizing: border-box;
+	width: 120px;
+	height: 120px;
+	border: 1px solid #CCC;
+	float:left;
+	position: relative;
+}
+
+.day .content
+{
+	position:relative;
+	top:5px;
+	left:5px;
+}
